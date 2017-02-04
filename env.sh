@@ -21,6 +21,7 @@
 echo "开始配置系统环境......"
 echo "(1/6)安装必要依赖包......"
 #Install Package Which Google recommend
+sudo add-apt-repository ppa:openjdk-r/ppa 
 sudo apt-get update
 sudo apt-get install -y git-core gnupg gcc-multilib g++-multilib \
 flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk2.8-dev \
@@ -28,7 +29,7 @@ squashfs-tools build-essential zip curl libncurses5-dev \
 zlib1g-dev openjdk-6-jre openjdk-6-jdk pngcrush schedtool \
 libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool \
 lib32z1-dev lib32ncurses5-dev lib32readline-gplv2-dev openjdk-7-jdk \
-zip unzip proxychains
+zip unzip proxychains 
 
 echo "(2/6)安装Repo 谢谢Mokee......"
 if [ ! -d ~/bin ]; then
