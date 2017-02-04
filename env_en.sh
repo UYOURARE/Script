@@ -21,13 +21,16 @@ export JOBS=`nproc`;
 
 #Install Package Which Google recommend
 sudo apt-get update
-sudo apt-get install -y git-core gnupg gcc-multilib g++-multilib \
-flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk2.8-dev \
-squashfs-tools build-essential zip curl libncurses5-dev \
-zlib1g-dev openjdk-6-jre openjdk-6-jdk pngcrush schedtool \
-libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool \
-lib32z1-dev lib32ncurses5-dev lib32readline-gplv2-dev openjdk-7-jdk \
-zip unzip proxychains
+sudo apt-get install -y git flex bison gperf build-essential libncurses5-dev:i386 \
+libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-dev g++-multilib \
+tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386 \
+dpkg-dev libsdl1.2-dev libesd0-dev \
+git-core gnupg flex bison gperf build-essential \
+zip curl zlib1g-dev gcc-multilib g++-multilib \
+libc6-dev-i386 \
+lib32ncurses5-dev x11proto-core-dev libx11-dev \
+lib32z-dev ccache \
+libgl1-mesa-dev libxml2-utils xsltproc unzip m4 \
 
 if [ ! -d ~/bin ]; then
   mkdir -p ~/bin
